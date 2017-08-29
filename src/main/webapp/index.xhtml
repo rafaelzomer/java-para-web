@@ -5,27 +5,9 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
-        <title>Jogo de advinhação</title>
+        <title>Java para WEB</title>
     </h:head>
     <h:body>
-        <h1>Jogo de advinhação</h1>
-
-        <h:form>
-            <h3>Nível: <h:outputLabel value="#{adivinharNumeroMB.nivel}"/></h3>
-            <b>Advinhe um número de 0 a <h:outputLabel value="#{adivinharNumeroMB.maxNums}"/>:</b>
-            <div>
-                <h:inputText value="#{adivinharNumeroMB.numero}"/>
-            </div>
-            <div>
-                Tentativas restantes: <h:outputLabel value="#{adivinharNumeroMB.tentativa}"/>
-            </div>
-            <div style="margin-top: 36px">
-                <h:commandButton  value="Enviar" action="#{adivinharNumeroMB.submeter()}" style="margin-right: 36px"/>
-                <h:commandButton  value="Desistir e revelar" action="#{adivinharNumeroMB.desistir()}"/>
-            </div>
-            <div style="margin-top: 16px">
-                <h:outputLabel value="#{adivinharNumeroMB.mensagemStatus}"/>
-            </div>
-        </h:form>
+        <a href="produto.xhtml"> Produto </a>
     </h:body>
 </html>

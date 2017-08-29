@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.unesc</groupId>
-	<artifactId>maven-jsf-boilerplate</artifactId>
+	<artifactId>java-para-web</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>maven-jsf-boilerplate</name>
-	<description>maven-jsf-boilerplate</description>
+	<name>java-para-web</name>
+	<description>java-para-web</description>
 
 
 	<dependencies>
