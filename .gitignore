@@ -62,7 +62,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-./src/main/webapp/WEB-INF/classes
+src/main/webapp/WEB-INF/classes
+
 
 # External tool builders
 .externalToolBuilders/
