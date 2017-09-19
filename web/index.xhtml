@@ -1,13 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-     <head>
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
         <title>index</title>
-    </head>
-    <body>
-        <a href="login.xhtml"> Ir para o login </a>
-    </body>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h1>Conversor CPF</h1>
+            <h:inputText value="#{cpfController.cpf}" converter="cpfConverter" maxlength="11"/>
+            <h:commandButton type="submit" value="Enviar" action="#{cpfController.converter()}"/>
+        </h:form>
+        
+        <h:form>
+            <h1>Conversor CNPJ</h1>
+            <h:inputText value="#{cnpjController.cnpj}" converter="cnpjConverter" maxlength="14"/>
+            <h:commandButton type="submit" action="#{cnpjController.converter()}" value="Enviar"/>
+        </h:form>
+        
+        
+        <h:messages id="mensagemErro"/>
+    </h:body>
 </html>
 
